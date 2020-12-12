@@ -6,7 +6,3 @@ services:
     build:
       context: ./ruby
     working_dir: /home/ruby
-  neovim:
-    image: solnic/neovim-ruby
-    build:
-      context: ./neovim
