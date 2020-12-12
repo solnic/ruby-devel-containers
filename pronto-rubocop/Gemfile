@@ -2,5 +2,5 @@
 
 source "https://rubygems.org"
 
-gem "pronto"
+gem "pronto", git: "https://github.com/prontolabs/pronto", branch: "master"
 gem "pronto-rubocop", git: "https://github.com/prontolabs/pronto-rubocop", branch: "master"
