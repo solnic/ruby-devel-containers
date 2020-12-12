@@ -5,4 +5,7 @@ services:
     image: solnic/ruby
     build:
       context: ./ruby
-    working_dir: /home/ruby
+  pronto-rubocop:
+    image: solnic/pronto-rubocop
+    build:
+      context: ./pronto-rubocop
