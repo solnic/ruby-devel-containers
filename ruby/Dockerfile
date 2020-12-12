@@ -31,11 +31,4 @@ RUN ruby-install -c -j4 -c --latest ruby --system -- --disable-install-rdoc && \
     echo "ruby" >> ~/.ruby-version
 
 # install latest bundler
-RUN chruby 2.7; gem install bundler --no-document
-
-RUN useradd -m -U -s /bin/bash -G root,sudo ruby && \
-  echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
-
-USER ruby
-
-ENTRYPOINT [ "/bin/bash", "-l" ]
+RUN gem install bundler --no-document
