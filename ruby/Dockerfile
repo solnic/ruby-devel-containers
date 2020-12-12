@@ -1,5 +1,7 @@
 FROM ubuntu:latest
 
+ARG DEBIAN_FRONTEND=noninteractive
+
 USER root
 
 # install required devel packages
